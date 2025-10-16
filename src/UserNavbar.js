@@ -41,12 +41,12 @@ function UserNavbar() {
         <Link to="/student-calendar" style={navLinkStyle}>
           CALENDAR
         </Link>
-        <a href="#" style={navLinkStyle}>
+        <Link to="/about" style={navLinkStyle}>
           ABOUT
-        </a>
-        <a href="#" style={navLinkStyle}>
+        </Link>
+        <Link to="/contact" style={navLinkStyle}>
           CONTACT
-        </a>
+        </Link>
         <a href="#" style={navLinkStyle}>
           PROFILE
         </a>
