@@ -1,9 +1,13 @@
 
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Button, Image } from "react-bootstrap";
 import UserNavbar from "./UserNavbar";
 
 function About() {
+  useEffect(() => {
+    document.title = "About SEAMS";
+  }, []);
+
   return (
     <div style={{ backgroundColor: "#f8f9fa", minHeight: "100vh" }}>
       <UserNavbar />

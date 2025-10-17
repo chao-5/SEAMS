@@ -55,5 +55,7 @@ function App() {
       </Routes>
     </Router>
   );
+  
+  <Footer />;
 }
 export default App;

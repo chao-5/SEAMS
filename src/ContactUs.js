@@ -1,5 +1,5 @@
 
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import UserNavbar from "./UserNavbar";
 import Footer from "./Footer";
@@ -11,11 +11,11 @@ function Contact() {
       <UserNavbar />
 
       <Container className="py-5">
-        <h2 className="fw-bold mb-3" style={{ color: "#2e7d32" }}>Contact Us</h2>
-        <p>We'd love to hear from you. Reach us through any of the contact details below.</p>
-
+        
         <Row className="mt-4">
           <Col md={6}>
+            <h2 className="fw-bold mb-3" style={{ color: "#2e7d32" }}>Contact Us</h2>
+            <p>We'd love to hear from you. Reach us through any of the contact details below.</p>  
             <p><GeoAltFill className="text-success me-2" /> Biglang Awa Street, Cor 11th Ave Caloocan City</p>
             <p><EnvelopeFill className="text-success me-2" /> southcampusadmin@ucc-caloocan.edu.ph</p>
             <p><TelephoneFill className="text-success me-2" /> TRUNK LINE: 8528-4654 | Admin: 53106855</p>
@@ -27,7 +27,7 @@ function Contact() {
             <div
               style={{
                 backgroundColor: "white",
-                padding: "20px",
+                padding: "23px",
                 borderRadius: "8px",
                 boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
               }}
@@ -35,7 +35,7 @@ function Contact() {
               <Form>
                 <Form.Control
                   as="textarea"
-                  rows={6}
+                  rows={12}
                   placeholder="Send a message..."
                 />
                 <Button

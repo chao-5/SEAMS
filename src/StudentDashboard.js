@@ -1,6 +1,7 @@
 // src/StudentDashboard.js
 import React, { useEffect } from "react";
 import UserNavbar from "./UserNavbar";
+import Footer from "./Footer";
 import "./StudentDashboard.css";
 
 function StudentDashboard() {
@@ -39,6 +40,8 @@ function StudentDashboard() {
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
